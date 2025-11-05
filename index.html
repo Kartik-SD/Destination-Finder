@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destination finder</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+
+       <!-- Navigation bar -->
+        <header>
+        <p class="logo" >WanderWay Travels <img src="images/logo.png" alt="" height="30px">
+        </p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Destinations</a>
+            <!-- <a href="#">Top Spots</a>             -->
+            <a href="#">Plan Trips</a>              
+            <a href="#">Contact us</a>
+        </nav>
+        </header>
+
+        <!-- Banner -->
+    <div class="banner">
+        <div class="img-text">
+        <p class="text-1">“Let’s find where your heart belongs.”</p>
+        <p class="text">“Your map to unforgettable destinations.”</p>
+        <p class="live">“Your journey begins here.”</p>
+        </div>
+       
+    </div>
+
+    <!-- large fonts -->
+     <div class="container-fluid">
+     
+    <div class="fonts">
+        <p class="l-font">10 Destinations you simply can't Miss in India </p>
+        <p class="M-font">As a first-time visitor to India, you'll be tempted to see it all – from our iconic cities to the outback wilderness. If you need to refine your agenda, here’s our list of the 10 most iconic places in India.</p>
+    </div>
+    </div>
+
+    <!-- destinations -->
+     <div class="cards">
+        <section class="destination-section">
+  <h2 class="head">Unlock Lesser-Known Wonders of India</h2>
+
+  <div class="card-container">
+    <div class="destination-card">
+      <img src="images/shimla.jpg" alt="Shimla" />
+      <h3>Shimla's Best Kept Secret</h3>
+      <p>Discover the peaceful side of the Himalayas away from the crowds.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="images/Goa.jpg" alt="goa" />
+      <h3>Goa best beach side</h3>
+      <p>Enjoy sandy beaches, nightlife, and water adventures in India’s party capital.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="images/Auli.jpg" alt="Auli" />
+      <h3>Picturesque Gateway to Himalayas</h3>
+      <p>Explore scenic trails, waterfalls, and cozy mountain villages.</p>
+    </div>
+
+     <div class="destination-card">
+      <img src="images/Leh.jpg" alt="Auli" />
+      <h3>Leh Ladakh Adventures</h3>
+      <p>Ride through high mountain passes and monasteries amid stunning landscapes.</p>
+    </div>
+     <div class="destination-card">
+      <img src="images/lakshwdeep.jpg" alt="Auli" />
+      <h3>Serene Lakshadweep Islands</h3>
+      <p>Turquoise waters, coral reefs, and peaceful tropical vibes await you.</p>
+    </div> 
+    
+    <div class="destination-card">
+      <img src="images/Amritsar.jpg" alt="Auli" />
+      <h3>Spiritual Amritsar</h3>
+      <p>Visit the sacred Golden Temple and experience the vibrant culture of Punjab.</p>
+    </div> 
+    
+    <div class="destination-card">
+      <img src="images/Kashmir (2).jpg" alt="Auli" />
+      <h3>Magical Kashmir Valley</h3>
+      <p>Snowy peaks, Dal Lake shikaras, and tulip gardens in India’s paradise.</p>
+    </div> 
+    
+    <div class="destination-card">
+      <img src="images/chikmagalaur.jpg" alt="Auli" />
+      <h3>Chikmagalur Coffee Heaven</h3>
+      <p>Wake up to misty hills, lush coffee plantations, and waterfalls in Karnataka’s serene hill station of Chikmagalur — perfect for peace and adventure lovers alike.</p>
+    </div>
+
+     <div class="destination-card">
+      <img src="images/Himachal.jpg" alt="Auli" />
+      <h3>Himachal’s Hidden Charm</h3>
+      <p>Snowy peaks, pine forests, and peaceful hill towns make Himachal Pradesh a nature lover’s delight.</p>
+    </div>
+
+     <div class="destination-card">
+      <img src="images/Mahabaleshwar.jpg" alt="Auli" />
+      <h3>Mahabaleshwar Hills</h3>
+      <p>Enjoy strawberry farms, scenic viewpoints, and cool mountain breezes in this beautiful hill station of Maharashtra.</p>
+    </div>
+
+  </div>
+</section>
+
+
+     </div>
+
+     <!-- about us -->
+      <section class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="images/destination img.jpg" alt="About Travel Booking">
+    </div>
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        Welcome to <strong>WanderWay Travels</strong> — your trusted partner in discovering the most beautiful
+        destinations across India. From sun-kissed beaches to snow-covered peaks, we make every journey unforgettable.
+      </p>
+      <p>
+        Our mission is to provide seamless travel experiences with personalized packages, easy booking,
+        and reliable customer support. Whether it’s a peaceful escape or an adventurous getaway,
+        we’ve got the perfect destination waiting for you.
+      </p>
+      <button class="about-btn">Explore Destinations</button>
+    </div>
+  </div>
+</section>
+
+<!-- form -->
+ <section class="booking-section">
+  <div class="form-container">
+    <h2>Travel Booking Form</h2>
+    <!-- ✅ Added id="bookingForm" here -->
+    <form id="bookingForm" action="/book" method="POST">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <div class="travel-dates">
+        <div>
+          <label for="from-date">Travel From</label>
+          <input type="date" id="from-date" name="from_date" required>
+        </div>
+        <div>
+          <label for="to-date">Travel To</label>
+          <input type="date" id="to-date" name="to_date" required>
+        </div>
+      </div>
+
+      <label for="place">Travel Destination</label>
+      <select id="place" name="place" required>
+        <option value="">-- Select Destination --</option>
+        <option value="Goa">Goa</option>
+        <option value="Amritsar">Amritsar</option>
+        <option value="Himachal">Himachal</option>
+        <option value="Mahabaleshwar">Mahabaleshwar</option>
+        <option value="Kashmir">Kashmir</option>
+        <option value="Leh">Leh</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Chikmagalur">Chikmagalur</option>
+        <option value="Manali">Manali</option>
+        <option value="Shimla">Shimla</option>
+        <option value="Narkanda">Narkanda</option>
+        <option value="Kasol">kasol</option>
+        <option value="Spiti">Spiti</option>
+        <option value="Dehradun">Dehradun</option>
+        <option value="Masoriee">Masoriee</option>
+        <option value="Kinoor">Kinoor</option>
+        <option value="Bombay">Bombay</option>
+      </select>
+
+      <button type="submit" class="book-btn">Book Now</button>
+    </form>
+
+    <!-- ✅ Keep success message inside the same section -->
+    <p class="success-message" id="successMsg" style="display:none;">✅ Booking Done Successfully!</p>
+  </div>
+</section>
+
+<!-- <!-- ===== Blog / Review Section ===== -->
+<!-- ===== Blog / Review Section ===== -->
+<section class="blog-section" id="blog">
+  <h2 class="section-title">Traveler Reviews & Experiences</h2>
+  <p class="section-subtitle">Hear from travelers who explored with us ✈️</p>
+
+  <div class="blog-container">
+
+    <!-- Blog 1 -->
+    <div class="blog-card">
+      <img src="images/goa.jpg" alt="Goa Beach">
+      <div class="blog-content">
+        <h3>Goa – The Perfect Beach Escape</h3>
+        <p>“Amazing experience! The beaches were clean, nightlife was fun, and the booking process was super smooth. Will visit again soon!”</p>
+        <span>- Priya Sharma</span>
+      </div>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="blog-card">
+      <img src="images/Kashmir (2).jpg" alt="Kashmir Snow">
+      <div class="blog-content">
+        <h3>Kashmir – Heaven on Earth</h3>
+        <p>“From snow-capped mountains to Dal Lake shikara rides, every moment was magical. Thank you for arranging a perfect trip!”</p>
+        <span>- Rohit Mehta</span>
+      </div>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="blog-card">
+      <img src="images/amritsar.jpg" alt="Amritsar Golden Temple">
+      <div class="blog-content">
+        <h3>Amritsar – A Spiritual Journey</h3>
+        <p>“Visiting the Golden Temple early morning was a peaceful experience. Everything was well-organized and comfortable.”</p>
+        <span>- Sneha Verma</span>
+      </div>
+    </div>
+
+    <!-- Blog 4 -->
+    <div class="blog-card">
+      <img src="images/taj mahal.jpg" alt="Taj Mahal">
+      <div class="blog-content">
+        <h3>Agra – The Majestic Taj Mahal</h3>
+        <p>“Standing in front of the Taj Mahal was surreal. The monument is even more beautiful in person, and the tour was perfectly arranged.”</p>
+        <span>- Aarav Singh</span>
+      </div>
+    </div>
+
+    <!-- Blog 5 -->
+    <div class="blog-card">
+      <img src="images/ooty.jpg" alt="Ooty Hills">
+      <div class="blog-content">
+        <h3>Ooty – Queen of Hill Stations</h3>
+        <p>“Ooty’s tea gardens and cool weather were refreshing. A peaceful getaway with breathtaking views of the Nilgiri hills.”</p>
+        <span>- Kavya Nair</span>
+      </div>
+    </div>
+
+    <!-- Blog 6 -->
+    <div class="blog-card">
+      <img src="images/rajasthan.jpg" alt="Rajasthan Desert">
+      <div class="blog-content">
+        <h3>Rajasthan – Colors of the Desert</h3>
+        <p>“From Jaipur’s palaces to Jaisalmer’s dunes, Rajasthan is truly royal. Great stay and travel arrangements by WanderWay!”</p>
+        <span>- Manish Patel</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== Gallery Section ===== -->
+<!-- ===== Enhanced Gallery Section ===== -->
+<section class="gallery">
+  <h2>Travel Gallery</h2>
+  <div class="gallery-slider">
+    <div class="slide active">
+      <img src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Goa Beach">
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/2080961/pexels-photo-2080961.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Himalayas">
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rajasthan Desert">
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ooty Hills">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ===== Contact Us Section ===== -->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p class="section-subtitle">We’d love to hear from you ❤️</p>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <p><strong>Email:</strong> wanderwaytravels@gmail.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> 22, Travel Street, Delhi, India</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ===== Footer Section ===== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left: Brand Info -->
+    <div class="footer-about">
+      <h2>TravelBook</h2>
+      <p>Explore, book, and experience the world with ease. Your dream destination is just a click away!</p>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#book">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    
+
+    <!-- Right: Contact / Social -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@travelbook.com</p>
+      <p>Phone: +91 98765 43210</p>
+
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 TravelBook. All Rights Reserved | Designed by Kartik Sharma ✈️</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+  document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page refresh
+
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const fromDate = document.getElementById("from-date").value;
+    const toDate = document.getElementById("to-date").value;
+    const place = document.getElementById("place").value;
+
+    // Display thank you message in dialog box
+    alert(`Thank you, ${name}!\n\nYour booking to ${place} is confirmed.\n\nTravel Dates: ${fromDate} to ${toDate}\nWe’ll contact you at ${email} or ${phone}.`);
+
+    // Show success message below button
+    document.getElementById("successMsg").style.display = "block";
+
+    // Reset form
+    document.getElementById("bookingForm").reset();
+  });
+  // Auto image slider for each gallery card
+document.addEventListener("DOMContentLoaded", () => {
+  const sliders = document.querySelectorAll(".image-slider");
+
+  sliders.forEach(slider => {
+    const slides = slider.querySelectorAll(".slide");
+    let index = 0;
+    slides[index].classList.add("active");
+
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 2500);
+  });
+});
+</script>
+
+
+
+</html>
